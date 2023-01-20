@@ -1,0 +1,535 @@
+<!doctype html>
+<html class="no-js" lang="lv">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/main.css?v=0.1">
+
+  <!-- Scripts -->
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script src="/assets/js/main.js?v=0.1"></script>
+</head>
+<body>
+  <header>
+    <div class="container-xxl">
+      <!-- Language -->
+      <div class="language-switch mt-3 text-end">
+        <a href="#"><img src="/assets/images/ico/ico-earth-home-world.svg" alt="Izvēlies valdou" /> Latvija • Latviski</a>
+      </div>
+      <!-- / Language -->
+
+      
+
+      <a href="#" class="brand-link"><img src="/assets/images/brand-rolling.svg" alt="Rolling"></a>
+
+      
+      <div class="mobile-bar"> <!-- Mobile Bar -->
+      <!-- Search Bar -->
+      <form action="" method="" class="search-bar">
+        <div class="search-bar__group">
+          <button type="submit" class="search-bar__btn"><img src="/assets/images/ico/ico-search.svg" alt="Meklēt"></button>
+          <input type="text" class="search-bar__input" placeholder="Meklēt starp 123456 precēm..." />
+        </div>
+        <div>
+          <a href="#" class="search-bar__link">
+            <span class="ico icon-printerink"></span>
+            Kartridžu meklētājs
+          </a>
+        </div>
+      </form>
+      <!-- / Search Bar -->
+
+      <!-- Search Mobile Buttons -->
+      <div class="button button--overlay-link button--search">
+        <div class="button__icon">
+          <span class="ico icon-search"></span>
+        </div>
+        <div class="button__label">
+          <a href="#" class="button__title">Meklēt</a>
+        </div>
+      </div>
+      <div class="button button--overlay-link button--printer">
+        <div class="button__icon">
+          <span class="ico icon-printerink"></span>
+        </div>
+        <div class="button__label">
+          <a href="#" class="button__title" data-panel="cart">Kartridži</a>
+        </div>
+      </div>
+      <!-- / Search Mobile Buttons -->
+
+      <!-- Login & Cart -->      
+      <div class="button button--overlay-link button--profile">
+        <div class="button__icon">
+          <span class="ico icon-user-profile-1"></span>
+        </div>
+        <div class="button__label">
+          <a href="#" class="button__title">Ienākt</a>
+          <span class="button__subtitle">Reģistrēties</span>
+        </div>
+      </div>
+      <div class="button button--overlay-link button--cart">
+        <div class="button__icon">
+          <span class="ico icon-shopping-cart"></span>
+        </div>
+        <div class="button__label">
+          <a href="#" class="button__title js-open-sidepanel" data-panel="cart">Grozs</a>
+          <span class="button__subtitle">0 preces</span>
+        </div>
+      </div>      
+      <!-- /Login & Cart -->
+
+      <!-- Navigation -->
+      <nav class="nav main-nav">
+        <ul class="nav__list">
+          <li class="nav__item nav__item--menu nav__item--no-seperator"><a class="nav__link js-category-link" href="#">
+            <span class="ico icon-menu-burger"></span> Visi produkti</a>
+            <!-- Category Menu -->
+            <nav class="category-nav js-category">
+              <div class="category-nav__header">
+                <h2 class="category-nav__title">Produktu grupas</h2>
+                <a href="#" class="sidepanel__close js-category-link">Aizvērt</a>
+              </div>
+              <ul class="category__list">
+                <li class="category__item"><a href="#" class="category__link"><span class="ico icon-gift-box"></span> Svētkiem <span class="tag tag-list tag--new ms-2">new!</span></a>
+                  <nav class="subcategory">
+                    <div class="category-nav__header">
+                      <h2 class="category-nav__title js-close-subcategory"><span class="ico icon-left-arrow"></span> Svētkiem</h2>
+                      <a href="#" class="sidepanel__close js-category-link">Aizvērt</a>
+                    </div>
+                    <ul class="subcategory__list">
+                      <li class="subcategory__item subcategory__item--title"><a href="#" class="subcategory__link">Svētku dāvanas</a></li>
+                      <li class="subcategory__item"><a href="#" class="subcategory__link">Dāvanu komplekti</a></li>
+                      <li class="subcategory__item"><a href="#" class="subcategory__link">Dāvanu komplekti bērniem</a></li>
+                      <li class="subcategory__item"><a href="#" class="subcategory__link">Dāvanas skaistumam</a></li>
+                      <li class="subcategory__item"><a href="#" class="subcategory__link">Dāvanas, kas radītas Latvijā</a></li>
+                      <li class="subcategory__item subcategory__item--title"><a href="#" class="subcategory__link">Adventes vainagi</a></li>
+                      <li class="subcategory__item subcategory__item--title"><a href="#" class="subcategory__link">Tortes, kūkas un kliņģeri</a></li>
+                      <li class="subcategory__item subcategory__item--title"><a href="#" class="subcategory__link">Svētku noformējums</a></li>
+                      <li class="subcategory__item"><a href="#" class="subcategory__link">Ziemassvētku dekori un egles</a></li>
+                      <li class="subcategory__item"><a href="#" class="subcategory__link">Dāvanu saiņošanai</a></li>
+                      <li class="subcategory__item"><a href="#" class="subcategory__link">Elektriskie svečturi, lampiņas</a></li>
+                      <li class="subcategory__item"><a href="#" class="subcategory__link">Pamatnes un dekori</a></li>
+                      <li class="subcategory__item"><a href="#" class="subcategory__link">Adventes vainagiem</a></li>
+                      <li class="subcategory__item"><a href="#" class="subcategory__link">Dekoratīvās krāsas</a></li>
+                      <li class="subcategory__item"><a href="#" class="subcategory__link">Baloni un virtenes</a></li>
+                      <li class="subcategory__item"><a href="#" class="subcategory__link">Krāsainās aploksnes</a></li>
+                      <li class="subcategory__item"><a href="#" class="subcategory__link">Dizaina papīrs</a></li>
+                      <li class="subcategory__item"><a href="#" class="subcategory__link">Līmes pistoles un līmes stienīši</a></li>
+                      <li class="subcategory__item"><a href="#" class="subcategory__link">Dekoratīvās uzlīmes</a></li>
+                      <li class="subcategory__item"><a href="#" class="subcategory__link">Logu uzlīmes</a></li>
+                      <li class="subcategory__item"><a href="#" class="subcategory__link">Dekoratīvie caurumotāji </a></li>
+                      <li class="subcategory__item"><a href="#" class="subcategory__link">Rakstāmlietas</a></li>
+                      <li class="subcategory__item subcategory__item--title"><a href="#" class="subcategory__link">Piparkūkas un gardumi</a></li>
+                      <li class="subcategory__item"><a href="#" class="subcategory__link">Piparkūkas un cepumi</a></li>
+                      <li class="subcategory__item"><a href="#" class="subcategory__link">Konfektes, šokolādes</a></li>
+                      <li class="subcategory__item subcategory__item--title"><a href="#" class="subcategory__link">Svētku atpūtai un priekam</a></li>
+                      <li class="subcategory__item"><a href="#" class="subcategory__link">Karnevāla tērpi, parūkas un maskas</a></li>
+                      <li class="subcategory__item"><a href="#" class="subcategory__link">Konstruktori</a></li>
+                      <li class="subcategory__item"><a href="#" class="subcategory__link">Mīkstās rotaļlietas</a></li>
+                      <li class="subcategory__item subcategory__item--title"><a href="#" class="subcategory__link">Dzērieni</a></li>
+                      <li class="subcategory__item"><a href="#" class="subcategory__link">Dzirkstošie dzērieni</a></li>
+                      <li class="subcategory__item"><a href="#" class="subcategory__link">Limonādes</a></li>
+                      <li class="subcategory__item"><a href="#" class="subcategory__link">Sulas un atspirdzinošie dzērieni</a></li>
+                      <li class="subcategory__item subcategory__item--title"><a href="#" class="subcategory__link">Preces ar Latvijas simboliku</a></li>
+                    </ul>
+                  </nav>
+                </li>
+                <li class="category__item"><a href="#" class="category__link"><span class="ico icon-calendar-schedule"></span> Kalendāri un plānotāji 2023</a></li>
+                <li class="category__item"><a href="#" class="category__link"><span class="ico icon-school-bag"></span> Preces skolai</a></li>
+                <li class="category__item"><a href="#" class="category__link"><span class="ico icon-protective-mask"></span> COVID-19 testi, sejas maskas un respiratori</a></li>
+                <li class="category__item"><a href="#" class="category__link"><span class="ico icon-d-printer"></span> Tonera un tintes kasetes, lentas</a></li>
+                <li class="category__item"><a href="#" class="category__link"><span class="ico icon-printer"></span> Biroja tehnika un noma</a></li>
+                <li class="category__item"><a href="#" class="category__link"><span class="ico icon-printer-minimal-minus"></span> Biroja tehnikas izejmateriāli</a></li>
+                <li class="category__item"><a href="#" class="category__link"><span class="ico icon-keyboard-mouse"></span> Datortehnika un piederumi</a></li>
+                <li class="category__item"><a href="#" class="category__link"><span class="ico icon-leaf-ecology-paper"></span> Biroja papīrs</a></li>
+                <li class="category__item"><a href="#" class="category__link"><span class="ico icon-pencil-ruler-grid"></span> Kancelejas preces</a></li>
+                <li class="category__item"><a href="#" class="category__link"><span class="ico icon-presentation-projector"></span> Prezentāciju un konferenču piederumi</a></li>
+                <li class="category__item"><a href="#" class="category__link"><span class="ico icon-design-tool-stamp"></span> Zīmogi un zīmogu piederumi</a></li>
+                <li class="category__item"><a href="#" class="category__link"><span class="ico icon-champagne-wine-glass"></span> Alkoholiskie dzērieni</a></li>
+                <li class="category__item"><a href="#" class="category__link"><span class="ico icon-coffee-cup"></span> Pārtikas preces</a></li>
+                <li class="category__item"><a href="#" class="category__link"><span class="ico icon-cleaning-spray-action"></span> Saimniecības preces</a></li>
+                <li class="category__item"><a href="#" class="category__link"><span class="ico icon-soap-drop"></span> Dezinfekcijai, tīrībai un drošībai</a></li>
+                <li class="category__item"><a href="#" class="category__link"><span class="ico icon-plate-fork"></span> Trauki un galda piederumi</a></li>
+                <li class="category__item"><a href="#" class="category__link"><span class="ico icon-teapot"></span> Virtuves tehnika, kopšanas līdzekļi</a></li>
+                <li class="category__item"><a href="#" class="category__link"><span class="ico icon-coffee-machine"></span> Kafijas automāti un to kopšanas līdzekļi</a></li>
+                <li class="category__item"><a href="#" class="category__link"><span class="ico icon-light-bulb"></span> Elektropreces un piederumi</a></li>
+                <li class="category__item"><a href="#" class="category__link"><span class="ico icon-office-desk"></span> Birojs mājās</a></li>
+                <li class="category__item"><a href="#" class="category__link"><span class="ico icon-office-chair"></span> Biroja interjera preces</a></li>
+                <li class="category__item"><a href="#" class="category__link"><span class="ico icon-basket-3"></span> Tirdzniecības telpu aprīkojums</a></li>
+              </ul>
+            </nav>
+            <!-- / Category Menu -->
+          </li>
+          <li class="nav__item nav__item--no-seperator"><a href="#" class="nav__link">Kancelejas preces</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Saimniecības preces</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Pārtikas preces</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Biroja tehnika</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Toneri un tintes kartridži</a></li>
+        </ul>
+      </nav>
+      <!-- / Navigation -->
+      </div> <!-- / Mobile Bar -->
+      <!-- Quick Links -->
+      <nav class="nav quick-links">
+        <ul class="quick-links__list">
+          <li class="quick-links__item"><a href="#" class="quick-links__link"><img src="/assets/images/ico/ico-delivery.svg" alt=""> <span>Bezmaksas piegāde</span></a></li>
+          <li class="quick-links__item"><a href="#" class="quick-links__link"><img src="/assets/images/ico/ico-rolling-lats.svg" alt=""> <span>Rolling lati</span></a></li>
+          <li class="quick-links__item"><a href="#" class="quick-links__link"><img src="/assets/images/ico/ico-printer-refill.svg" alt=""> <span>Kartridžu uzpilde</span></a></li>
+          <li class="quick-links__item"><a href="#" class="quick-links__link"><img src="/assets/images/ico/ico-fix.svg" alt=""> <span>Meistara vizīte</span></a></li>
+        </ul>
+      </nav>
+      <!-- / Quick Links -->
+    
+
+    </div>
+  </header>
+
+  <div class="container-xxl">
+    <!-- Hero -->
+    <div class="hero">
+      <picture>
+        <img src="/images/hero.png" alt="">
+      </picture>
+    </div>
+    <!-- / Hero -->
+
+    <!-- ThumbGrid -->
+    <section class="module module--scroll">
+      <div class="row thumbgrid">
+       <div class="col-5 col-md-3 thumbgrid__element">
+        <article class="simplepic simplebanner">
+         <figure>
+          <a href="https://www.rolling.lv/news/view-news/2498"><img src="https://www.rolling.lv//WebShowSaleBanner.hal?code=1&amp;small=1"></a>
+         </figure>
+         <div class="simplebanner__body">
+          <h3><a href="https://www.rolling.lv/news/view-news/2498">SCHNEIDER produktu mēnesis! </a></h3>
+         </div>
+        </article>
+       </div>
+       <div class="col-5 col-md-3 thumbgrid__element">
+        <article class="simplepic simplebanner">
+         <figure>
+          <a href="https://www.rolling.lv/news/view-news/2514"><img src="https://www.rolling.lv//WebShowSaleBanner.hal?code=113&amp;small=1"></a>
+         </figure>
+         <div class="simplebanner__body">
+          <h3><a href="https://www.rolling.lv/news/view-news/2514">SANITEC produktu mēnesis! </a></h3>
+         </div>
+        </article>
+       </div>
+       <div class="col-5 col-md-3 thumbgrid__element">
+        <article class="simplepic simplebanner">
+         <figure>
+          <a href="/news/view-news/2502"><img src="https://www.rolling.lv//WebShowSaleBanner.hal?code=27&amp;small=1"></a>
+         </figure>
+         <div class="simplebanner__body">
+          <h3><a href="/news/view-news/2502">FORPUS produktu mēnesis! </a></h3>
+         </div>
+        </article>
+       </div>
+       <div class="col-5 col-md-3 thumbgrid__element">
+        <article class="simplepic simplebanner">
+         <figure>
+          <a href="https://www.rolling.lv/news/view-news/2506"><img src="https://www.rolling.lv//WebShowSaleBanner.hal?code=47&amp;small=1"></a>
+         </figure>
+         <div class="simplebanner__body">
+          <h3><a href="https://www.rolling.lv/news/view-news/2506">MERRILD produktu mēnesis! </a></h3>
+         </div>
+        </article>
+       </div>
+       <div class="col-5 col-md-3 thumbgrid__element">
+        <article class="simplepic simplebanner">
+         <figure>
+          <a href="https://www.rolling.lv/news/view-news/2510"><img src="https://www.rolling.lv//WebShowSaleBanner.hal?code=62&amp;small=1"></a>
+         </figure>
+         <div class="simplebanner__body">
+          <h3><a href="https://www.rolling.lv/news/view-news/2510">PURE CHOCOLATE produktu mēnesis! </a></h3>
+         </div>
+        </article>
+       </div>
+       <div class="col-5 col-md-3 thumbgrid__element">
+        <article class="simplepic simplebanner">
+         <figure>
+          <a href="https://www.rolling.lv/news/view-news/2475"><img src="https://www.rolling.lv//WebShowSaleBanner.hal?code=82&amp;small=1"></a>
+         </figure>
+         <div class="simplebanner__body">
+          <h3><a href="https://www.rolling.lv/news/view-news/2475">LEITZ un ESSELTE arhivēšanas produktu mēnesis! </a></h3>
+         </div>
+        </article>
+       </div>
+       <div class="col-5 col-md-3 thumbgrid__element">
+        <article class="simplepic simplebanner">
+         <figure>
+          <a href="https://www.rolling.lv/news/view-news/2445"><img src="https://www.rolling.lv//WebShowSaleBanner.hal?code=87&amp;small=1"></a>
+         </figure>
+         <div class="simplebanner__body">
+          <h3><a href="https://www.rolling.lv/news/view-news/2445">ESSELTE tehnikas mēnesis! </a></h3>
+         </div>
+        </article>
+       </div>
+       <div class="col-5 col-md-3 thumbgrid__element">
+        <article class="simplepic simplebanner">
+         <figure>
+          <a href="/store/catalog/web_sale_SALE"><img src="https://www.rolling.lv//WebShowSaleBanner.hal?code=99&amp;small=1"></a>
+         </figure>
+         <div class="simplebanner__body">
+          <h3><a href="/store/catalog/web_sale_SALE">Izpārdošana </a></h3>
+         </div>
+        </article>
+       </div>
+      </div>
+     </section>
+    <!-- / ThumbGrid -->
+
+    <h1 class="section-title">Visi produkti</h1>
+
+    <!-- ThumbGrid-->
+    <div class="row">
+      <div class="col-6 col-md thumbgrid__element d-flex">
+        <article class="category">
+          <figure>
+            <span class="category__badges left">
+              <em class="tag tag--new">new!</em>
+            </span>
+            <img src="/images/prod-01.png" alt="Svētkiem" />
+          </figure>
+          <div>
+            <h4 class="category__name">
+            <a class="overlay-link" href="#">Svētkiem</a>
+            </h4>
+            <div class="product__info">
+              <p class="category__hint">923 preces</p>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-6 col-md thumbgrid__element d-flex">
+        <article class="category">
+          <figure>
+            <span class="category__badges left">
+              <em class="tag tag--new">new!</em>
+            </span>
+            <img src="/images/prod-02.png" alt="" />
+          </figure>
+          <div>
+            <h4 class="category__name">
+            <a class="overlay-link" href="#">Saimniecības preces</a>
+            </h4>
+            <div class="product__info">
+              <p class="category__hint">123 preces</p>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-6 col-md thumbgrid__element d-flex">
+        <article class="category">
+          <figure>
+            <span class="category__badges left">
+              <em class="tag tag--new">new!</em>
+            </span>
+            <img src="/images/prod-03.png" alt="" />
+          </figure>
+          <div>
+            <h4 class="category__name">
+            <a class="overlay-link" href="#">Pārtikas preces</a>
+            </h4>
+            <div class="product__info">
+              <p class="category__hint">826 preces</p>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-6 col-md thumbgrid__element d-flex">
+        <article class="category">
+          <figure>
+            <span class="category__badges left">
+              <em class="tag tag--new">new!</em>
+            </span>
+            <img src="/images/prod-04.png" alt="" />
+          </figure>
+          <div>
+            <h4 class="category__name">
+            <a class="overlay-link" href="#">Biroja tehnika un noma</a>
+            </h4>
+            <div class="product__info">
+              <p class="category__hint">54 preces</p>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-6 col-md thumbgrid__element d-flex">
+        <article class="category">
+          <figure>
+            <img src="/images/prod-05.png" alt="" />
+          </figure>
+          <div>
+            <h4 class="category__name">
+            <a class="overlay-link" href="#">Tonera un tintes kasetes, lentas</a>
+            </h4>
+            <div class="product__info">
+              <p class="category__hint">353 preces</p>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-6 col-md thumbgrid__element d-flex">
+        <article class="category">
+          <figure>
+            <img src="/images/prod-06.png" alt="" />
+          </figure>
+          <div>
+            <h4 class="category__name">
+            <a class="overlay-link" href="#">Biroja papīrs</a>
+            </h4>
+            <div class="product__info">
+              <p class="category__hint">75 preces</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+    <!-- / ThumbGrid-->
+
+    <!-- Prefooter -->
+    <section class="prefooter">
+      <img class="prefooter-brand" src="/assets/images/brand-rolling.svg" alt="rolling!" />
+      <div class="prefooter__item">
+        <div class="prefooter__media">
+          <span class="ico icon-delivery-truck-fast"></span>
+        </div>
+        <div class="prefooter__label">Bezmaksas piegāde</div>
+      </div>
+      <div class="prefooter__item">
+        <div class="prefooter__media">
+          <span class="ico icon-warehouse-package-box"></span>
+        </div>
+        <div class="prefooter__label">Liela noliktava</div>
+      </div>
+      <div class="prefooter__item">
+        <div class="prefooter__media">
+          <span class="ico icon-rating-five-star"></span>
+        </div>
+        <div class="prefooter__label">20 gadu pieredze</div>
+      </div>
+      <div class="prefooter__item">
+        <div class="prefooter__media">
+          <span class="ico icon-smileys"></span>
+        </div>
+        <div class="prefooter__label">Droša darba vide</div>
+      </div>
+    </section>
+    <!-- / Prefooter -->
+    
+    <footer>
+      <div class="footer-nav-row">
+        <nav class="footer-nav">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Piegāde</a></li>
+            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Serviss</a></li>
+            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Kartridžu uzpilde</a></li>
+            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Rolling lati</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-nav">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Jaunumi</a></li>
+            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Vakances</a></li>
+            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Ierosinājumi</a></li>
+            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Par Rolling</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-nav footer-nav--contacts">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Kontakti</a></li>
+            <li class="footer-nav__item"><a href="#" class="footer-nav__link footer-nav__link--thin"><span class="ico icon-marker-pin"></span> Plieņciema iela 37, Mārupe, Mārupes nov.</a></li>
+            <li class="footer-nav__item"><a href="#" class="footer-nav__link footer-nav__link--thin"><span class="ico icon-phone-call"></span> 8000 70 70</a></li>
+            <li class="footer-nav__item"><a href="#" class="footer-nav__link footer-nav__link--thin"><span class="ico icon-email-letter-square"></span> office@rolling.lv</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-nav footer-nav--socials">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Seko mums</a></li>
+            <li class="footer-nav__item"><a href="#" class="footer-nav__link footer-nav__link--thin"><span class="ico icon-facebook"></span> Facebook</a></li>
+            <li class="footer-nav__item"><a href="#" class="footer-nav__link footer-nav__link--thin"><span class="ico icon-tiktok"></span> Tiktok</a></li>
+            <li class="footer-nav__item"><a href="#" class="footer-nav__link footer-nav__link--thin"><span class="ico icon-instagram"></span> Instagram</a></li>
+          </ul>
+        </nav>
+      </div>
+      
+      <div class="legal">
+        <div class="legal__text">
+          Informācijas pārpublicēšana bez rakstiskas atļaujas stingri aizliegta. <a href="#">Lietošanas noteikumi</a> un <a href="#">privātuma politika</a>.<br>Autortiesības © Rolling 2003-2023.
+        </div>
+        <div class="legal__media">
+          <img src="/images/iso_14001.svg" alt="" />
+          <img src="/images/iso_9001.svg" alt="" />
+        </div>
+      </div>
+    </footer>
+  </div>
+  
+
+  <!-- Overlay -->
+  <div class="overlay js-overlay"></div>
+  <!-- / Overlay -->
+
+  <!-- Cart -->
+  <div class="sidepanel cart js-sidepanel">
+    <div class="sidepanel__header">
+      <h2 class="sidepanel__title">Grozs <span class="sidepanel__subtitle">3 preces</span></h2>
+      <a href="#" class="sidepanel__close js-close-sidepanel">Aizvērt</a>
+    </div>    
+    <div class="cart__item">
+      <picture class="cart__media">
+        <img src="/images/cart-01.png" alt="" />
+      </picture>
+      <div class="cart__body">
+        <h3 class="cart__title">Xerox Phaser 3320V_DNI melnbaltais printeris</h3>
+        <div class="cart__price">€ 100.80</div>
+      </div>
+    </div>
+    <div class="cart__item">
+      <picture class="cart__media">
+        <img src="/images/cart-01.png" alt="" />
+      </picture>
+      <div class="cart__body">
+        <h3 class="cart__title">Xerox Phaser 3320V_DNI melnbaltais printeris</h3>
+        <div class="cart__price">€ 100.80</div>
+      </div>
+    </div>
+    <div class="cart__item">
+      <picture class="cart__media">
+        <img src="/images/cart-01.png" alt="" />
+      </picture>
+      <div class="cart__body">
+        <h3 class="cart__title">Xerox Phaser 3320V_DNI melnbaltais printeris</h3>
+        <div class="cart__price">€ 100.80</div>
+      </div>
+    </div>
+    <!-- Sidepanel Footer -->
+    <div class="sidepanel__footer">
+      <div class="cart__price-total">
+        <div class="cart__price-label">Summa <small>(ar PVN)</small></div>
+        <div class="cart__price-sum">€ 100.80</div>
+      </div>
+      <a href="#" class="btn btn-primary btn-ico btn-ico-end w-100">Skatīt grozu <span class="ico icon-right-arrow"></span></a>
+    </div>
+    <!-- / Sidepanel Footer -->
+  </div>
+  <!-- / Cart -->
+
+</body>
+</html>
